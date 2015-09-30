@@ -345,44 +345,25 @@ php中的流程控制语句可以分为如下几类:
 3. 跳转语句: braak/continue/return
 
 
-•简介
-•if
-•else
-•elseif/else if
-•流程控制的替代语法
-•while
-•do-while
-•for
-•foreach
-•break: 中断循环执行的语句;
-•continue: 跳过本次循环中后面的代码并进入下一次循环;
-•switch
-•declare
-•return
-•require
-•include
-•require_once
-•include_once
-•goto
-
-
-
-##函数
-
-•用户自定义函数
-•函数的参数
-•返回值
-•可变函数
-•内部（内置）函数
-•匿名函数
-
-
-###用户自定义函数
-###函数的参数
-###返回值
-###可变函数
-###内部（内置）函数
-###匿名函数
+- 简介
+- if
+- else
+- elseif/else if
+- 流程控制的替代语法
+- while
+- do-while
+- for
+- foreach
+- break: 中断循环执行的语句;
+- continue: 跳过本次循环中后面的代码并进入下一次循环;
+- switch
+- declare
+- return
+- require
+- include
+- require_once
+- include_once
+- goto
 
 
 
