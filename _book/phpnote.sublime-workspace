@@ -1,0 +1,511 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"login",
+				"login_times"
+			],
+			[
+				"ALLO",
+				"ALLOW_DAEMON_MAIL〔constant〕"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "phpnote.sublime-project",
+			"settings":
+			{
+				"buffer_size": 45,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/boxcore/workspace/phpnote"
+	],
+	"file_history":
+	[
+		"/Users/boxcore/workspace/phpnote/phpnote.sublime-project",
+		"/Users/boxcore/workspace/phpnote/php-basic/constants.md",
+		"/Users/boxcore/workspace/phpnote/SUMMARY.md",
+		"/Users/boxcore/workspace/phpnote/php-basic/operators.md",
+		"/Users/boxcore/workspace/phpnote/README.md",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/query_new.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/class/MultiActions.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/udaemon/sum_pt_year.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/funcs/global.fn.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/func.inc.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/admin/login.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/admin/logout.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/class/passport.php",
+		"/Users/boxcore/Library/Application Support/Sublime Text 3/Packages/User/Base File.sublime-settings",
+		"/Users/boxcore/Library/Application Support/Sublime Text 3/Packages/DocBlockr/Base File.sublime-settings",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/u_reg.php",
+		"/Users/boxcore/Library/Application Support/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+		"/Users/boxcore/Library/Application Support/Sublime Text 3/Packages/Terminal/Default (OSX).sublime-keymap",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/check_php_status.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/query_topic.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/1.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/templates/active_reg_login.htm",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/daemon.init.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/class/Pagination.class.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/referer_query.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/utils/DB.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/p_query.php",
+		"/Users/boxcore/Documents/zhanlue.md",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/udaemon/data_reg_act_total.php",
+		"/var/folders/ky/xkh338nd1x5fzflc6j33dp7r0000gn/T/sublime-svn-1443079792/SVN",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/quick_get_data.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/config/page_topic.conf.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/udaemon/2345_guest_daily.sample.sh",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/udaemon/2345_guest_daily.sh",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/udaemon/daemon.init.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/udaemon/2345_guest_daily_sd.sh",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/2345_guest_union_reg_act_total.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/2345_guest_game_login_act_total.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/2345_guest_game_login_act_total_sd.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/2345_guest_game_reg_act_total.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/2345_guest_game_reg_act_total_sd.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/2345_guest_reg_act_total.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/2345_guest_reg_act_total_sd.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/2345_guest_union_reg_act_total_sd.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/daemon.init.sample.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/2345_guest_daily_sd.sh",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/2345_guest_daily.sh",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/udaemon/sum_sd.test.sh",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/funcs/time.fn.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/DBconfig.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/data_game_reg_act_total.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/data_game_login_act_total.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/guest_game_login_act_total.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/guest_game_login_act_total_sd.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/guest_game_reg_act_total.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/guest_game_reg_act_total_sd.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/guest_reg_act_total.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/guest_reg_act_total_sd.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/guest_union_reg_act_total.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/guest_union_reg_act_total_sd.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/guest_daily_sd.sh",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/data_game_login_act_total_sd.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/data_game_reg_act_total_sd.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/data_period_reg_act_total.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/data_period_reg_act_total_sd.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/data_period_union_reg_act_total.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/daemon/data_period_union_reg_act_total_sd.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/templates/tg_union_daily_analysis.htm",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/templates/quick_sample.htm",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/monitor/check_profit_status_v2.php",
+		"/var/folders/ky/xkh338nd1x5fzflc6j33dp7r0000gn/T/sublime-svn-1442493971/SVN",
+		"/var/folders/ky/xkh338nd1x5fzflc6j33dp7r0000gn/T/sublime-svn-1442493943/SVN",
+		"/Users/boxcore/Desktop/检查统一汇总数据是否正确.sql",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/monitor/reg_unique_check.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/udaemon/sum_pt_day.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/udaemon/sum_pt_day_game.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/udaemon/sum_pt_month.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/udaemon/sum_pt_month_game.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/funcs/mail.fn.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/global.inc.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/monitor/payment_check.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/monitor/global.inc.php",
+		"/var/folders/ky/xkh338nd1x5fzflc6j33dp7r0000gn/T/sublime-svn-1442312980/SVN",
+		"/var/folders/ky/xkh338nd1x5fzflc6j33dp7r0000gn/T/sublime-svn-1442312959/SVN",
+		"/var/folders/ky/xkh338nd1x5fzflc6j33dp7r0000gn/T/sublime-svn-1442312150/SVN",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/monitor/monitor_daily.sh",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/monitor/system/Logger.lib.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/monitor/system/db.fn.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/monitor.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/templates/line.htm",
+		"/var/folders/ky/xkh338nd1x5fzflc6j33dp7r0000gn/T/sublime-svn-1442310822/SVN",
+		"/var/folders/ky/xkh338nd1x5fzflc6j33dp7r0000gn/T/sublime-svn-1442212098/SVN",
+		"/Users/boxcore/Desktop/alter-reg_log.sql",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/test_db.php",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/monitor/monitor_daily.sample.sh",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/sftp-config.json",
+		"/var/folders/ky/xkh338nd1x5fzflc6j33dp7r0000gn/T/sublime-svn-1441090301/SVN",
+		"/Users/boxcore/www/testsvn.tj.wan.2345.com/2345_income_spend_query.php",
+		"/Users/boxcore/www/txtj.37wan.com/get_game.php",
+		"/Users/boxcore/www/txtj.37wan.com/payment_contrast_chart.php",
+		"/Users/boxcore/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/boxcore/www/txtj.37wan.com/sftp-config.json",
+		"/Users/boxcore/www/txtj.37wan.com/daemon/daily_sd.sh",
+		"/Users/boxcore/www/txtj.37wan.com/DBconfig.php",
+		"/Users/boxcore/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/boxcore/Library/Application Support/Sublime Text 3/Packages/User/SFTP.sublime-settings",
+		"/Users/boxcore/vm/mydev/Vagrantfile",
+		"/etc/hosts",
+		"/Users/boxcore/vms/mydev/Vagrantfile",
+		"/Users/boxcore/Desktop/format-ntfs-disk.sh",
+		"/Users/boxcore/.ShadowsocksX/gfwlist.js",
+		"/Users/boxcore/Desktop/快盘/Soft/SwitchHosts/hosts/4.hosts",
+		"/Users/boxcore/Desktop/37wan/tj.37wan.com/ad_param_query.php"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/boxcore/www/testsvn.tj.wan.2345.com",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"php/",
+			"php",
+			"PHP",
+			"php",
+			"•",
+			"show_sql",
+			"$tmp_period",
+			"field_name",
+			"global.fn.php",
+			"ad_referer_str",
+			"pt_referer_list",
+			";\n",
+			"topic",
+			"登陆",
+			"data",
+			"pageRows",
+			"url",
+			"login_account",
+			",",
+			"r.",
+			"webmaster",
+			"league",
+			"daemon",
+			"show_s",
+			"重复注册账号",
+			"15",
+			"mysql_game_platform",
+			"();\n",
+			"UAD_DOMAIN"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"登录"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "phpnote.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 45,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								45,
+								45
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "Packages/User/php.sublime-build",
+	"project": "phpnote.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"query_new",
+				"query_new.php"
+			],
+			[
+				"multiactions",
+				"class/MultiActions.php"
+			],
+			[
+				"glob",
+				"funcs/global.fn.php"
+			],
+			[
+				"dbconf",
+				"DBconfig.php"
+			],
+			[
+				"func",
+				"func.inc.php"
+			],
+			[
+				"kf_query",
+				"kf_query.php"
+			],
+			[
+				"active_model",
+				"templates/active_model.htm"
+			],
+			[
+				"query_login_pt_by_day",
+				"templates/query_login_pt_by_day.htm"
+			],
+			[
+				"query_login",
+				"query_login.php"
+			],
+			[
+				"pass",
+				"class/passport.php"
+			],
+			[
+				"querytop",
+				"query_topic.php"
+			],
+			[
+				"u_reg",
+				"u_reg.php"
+			],
+			[
+				"db.",
+				"utils/DB.php"
+			],
+			[
+				"p_query",
+				"p_query.php"
+			],
+			[
+				"act_reg_login",
+				"templates/active_reg_login.htm"
+			],
+			[
+				"topi",
+				"query_topic.php"
+			],
+			[
+				"topic",
+				"query_topic.php"
+			],
+			[
+				"quick",
+				"quick_get_data.php"
+			],
+			[
+				"referer_query.php",
+				"referer_query.php"
+			],
+			[
+				"dbcon",
+				"DBconfig.php"
+			],
+			[
+				"time",
+				"funcs/time.fn.php"
+			],
+			[
+				"quickhtm",
+				"templates/quick_sample.htm"
+			],
+			[
+				"tg_union_daily_analysis",
+				"templates/tg_union_daily_analysis.htm"
+			],
+			[
+				"global.inc.php",
+				"global.inc.php"
+			],
+			[
+				"mail.fn.php",
+				"funcs/mail.fn.php"
+			],
+			[
+				"global",
+				"global.inc.php"
+			],
+			[
+				"line.htm",
+				"templates/line.htm"
+			],
+			[
+				"moni",
+				"monitor.php"
+			],
+			[
+				"dbco",
+				"DBconfig.php"
+			],
+			[
+				"glo",
+				"global.inc.php"
+			],
+			[
+				"fun",
+				"func.inc.php"
+			],
+			[
+				"p_query.php",
+				"p_query.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/workspace/phpnote/phpnote.sublime-project"
+			],
+			[
+				"re",
+				"~/Desktop/快盘/My/sublime-project/mac.renren.人人统计平台.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 232.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

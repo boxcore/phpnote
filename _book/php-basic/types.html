@@ -1,0 +1,451 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>类型 | 我的PHP笔记</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../php-basic/variable.html" />
+    
+    
+    <link rel="prev" href="../php-basic/README.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="1.1" data-basepath=".." data-revision="1443663045995">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="php-basic/README.html">
+            
+                
+                    <a href="../php-basic/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         PHP基础知识
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter active" data-level="1.1" data-path="php-basic/types.html">
+            
+                
+                    <a href="../php-basic/types.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         类型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="php-basic/variable.html">
+            
+                
+                    <a href="../php-basic/variable.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         变量
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="php-basic/constants.html">
+            
+                
+                    <a href="../php-basic/constants.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         常量
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="php-basic/operators.html">
+            
+                
+                    <a href="../php-basic/operators.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         运算符
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="php-basic/control-structures.html">
+            
+                
+                    <a href="../php-basic/control-structures.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                         流程控制
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6" data-path="php-basic/functions.html">
+            
+                
+                    <a href="../php-basic/functions.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                         函数
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="php_sort/README.html">
+            
+                
+                    <a href="../php_sort/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         PHP排序
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="php_event_loop/README.html">
+            
+                
+                    <a href="../php_event_loop/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         PHP轮询（Event Loop）
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >我的PHP笔记</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_349">
+                    
+                        <h1 id="php">PHP类型</h1>
+<p>PHP 支持 8 种原始数据类型。</p>
+<ul>
+<li>标量类型：boolean（布尔型）、integer（整型）、float（浮点型，也称作 double) 和 string（字符串）</li>
+<li>复合类型： array（数组）和 object（对象）</li>
+<li>特殊类型：resource（资源）和 NULL（无类型）</li>
+</ul>
+<h3 id="">布尔类型</h3>
+<p>boolean表示真假，使用关键字为true或false，通常运算结果会返回给控制流程。两者不区分大小，但建议用小写，php编译时候会转成小写。</p>
+<p>以下几种情况的转换会被认为是false：
+布尔值 FALSE 本身</p>
+<ul>
+<li>整型值 0</li>
+<li>浮点型值 0.0</li>
+<li>空字符串，以及字符串 &quot;0&quot;</li>
+<li>不包括任何元素的数组</li>
+<li>不包括任何成员变量的对象（仅 PHP 4.0 适用）</li>
+<li>特殊类型 NULL（包括尚未赋值的变量）</li>
+<li>从空标记生成的 SimpleXML 对象</li>
+</ul>
+<h3 id="">整型</h3>
+<p>整型值可以使用十进制，十六进制，八进制或二进制表示，前面可以加上可选的符号（- 或者 +）。</p>
+<p>要使用八进制表达，数字前必须加上 0（零）。要使用十六进制表达，数字前必须加上 0x。要使用二进制表达，数字前必须加上 0b。</p>
+<p>如果向八进制数传递了一个非法数字（即 8 或 9），则后面其余数字会被忽略。 如下例(八进制数的怪事)：</p>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+var_dump(<span class="hljs-number">01090</span>); <span class="hljs-comment">// 八进制 010 = 十进制 8</span>
+<span class="hljs-preprocessor">?&gt;</span>
+</code></pre>
+<p>整型转函数：</p>
+<ul>
+<li><code>(int)</code>或<code>(integer)</code>强制转换</li>
+<li><code>intval()</code></li>
+</ul>
+<h3 id="">浮点型</h3>
+<p>浮点型（也叫浮点数 float，双精度数 double 或实数 real）</p>
+<p>注意：1和1.0是不相等的，1.0的浮点，真实的值只能是无线接近于1而不等于一的。如判断 if(1==1.0)是返回false的。</p>
+<h3 id="">字符串</h3>
+<p>一个字符串是由一系列的字符组成，其中每个字符等同于一个字节。这意味着 PHP 只能支持 256 的字符集，因此不支持 Unicode 。</p>
+<blockquote>
+<p>string 最大可以达到 2GB。</p>
+</blockquote>
+<p>一个字符串可以用 4 种方式表达：</p>
+<ul>
+<li>单引号</li>
+<li>双引号</li>
+<li>heredoc 语法结构</li>
+<li>nowdoc 语法结构（自 PHP 5.3.0 起）</li>
+</ul>
+<h4 id="">单引号</h4>
+<p>在单引号中的字符串要表达一个单引号自身，需在它的前面加个反斜线（\）来转义。要表达一个反斜线自身，则用两个反斜线（\）。其它任何方式的反斜线都会被当成反斜线本身：也就是说如果想使用其它转义序列例如 \r 或者 \n，并不代表任何特殊含义，就单纯是这两个字符本身。</p>
+<p>在单引号字符串中的变量和特殊字符的转义序列将不会被替换。</p>
+<h4 id="">双引号</h4>
+<p>如果字符串是包围在双引号（&quot;）中， PHP 将对一些特殊的字符进行解析：</p>
+<pre><code>\n 换行（ASCII 字符集中的 LF 或 0x0A (10)）
+\r 回车（ASCII 字符集中的 CR 或 0x0D (13)）
+\t 水平制表符（ASCII 字符集中的 HT 或 0x09 (9)）
+\v 垂直制表符（ASCII 字符集中的 VT 或 0x0B (11)）（自 PHP 5.2.5 起）
+\e Escape（ASCII 字符集中的 ESC 或 0x1B (27)）（自 PHP 5.4.0 起）
+\f 换页（ASCII 字符集中的 FF 或 0x0C (12)）（自 PHP 5.2.5 起）
+\\ 反斜线
+\$ 美元标记
+\&quot; 双引号
+\[0-7]{1,3} 符合该正则表达式序列的是一个以八进制方式来表达的字符
+\x[0-9A-Fa-f]{1,2} 符合该正则表达式序列的是一个以十六进制方式来表达的字符
+</code></pre><h4 id="heredoc-">Heredoc 结构</h4>
+<p>第三种表达字符串的方法是用 heredoc 句法结构：<code>&lt;&lt;&lt;</code>。在该运算符之后要提供一个标识符，然后换行。接下来是字符串 string 本身，最后要用前面定义的标识符作为结束标志。</p>
+<p>结束时所引用的标识符必须在该行的第一列，而且，标识符的命名也要像其它标签一样遵守 PHP 的规则：只能包含字母、数字和下划线，并且必须以字母和下划线作为开头。</p>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-string">&lt;&lt;&lt;"FOOBAR"
+Hello World!
+FOOBAR;</span>
+<span class="hljs-preprocessor">?&gt;</span>
+</code></pre>
+<h4 id="nowdoc-">Nowdoc 结构</h4>
+<p>就象 heredoc 结构类似于双引号字符串，Nowdoc 结构是类似于单引号字符串的。Nowdoc 结构很象 heredoc 结构，但是 nowdoc 中不进行解析操作。这种结构很适合用于嵌入 PHP 代码或其它大段文本而无需对其中的特殊字符进行转义。</p>
+<p>例子：</p>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-string">&lt;&lt;&lt;'EOT'
+My name is "$name". I am printing some $foo-&gt;foo.
+Now, I am printing some {$foo-&gt;bar[1]}.
+This should not print a capital 'A': \x41
+EOT;</span>
+<span class="hljs-preprocessor">?&gt;</span>
+</code></pre>
+<h3 id="">数组</h3>
+<p>PHP 中的数组实际上是一个有序映射。映射是一种把 values 关联到 keys 的类型。此类型在很多方面做了优化，因此可以把它当成真正的数组，或列表（向量），散列表（是映射的一种实现），字典，集合，栈，队列以及更多可能性。由于数组元素的值也可以是另一个数组，树形结构和多维数组也是允许的。</p>
+<h3 id="">对象</h3>
+<p>要创建一个新的对象 object，使用 new 语句实例化一个类</p>
+<h3 id="">资源类型</h3>
+<p>资源 resource 是一种特殊变量，保存了到外部资源的一个引用。资源是通过专门的函数来建立和使用的。</p>
+<h3 id="">其他类型</h3>
+<h4 id="null">NULL</h4>
+<p>特殊的 NULL 值表示一个变量没有值。NULL 类型唯一可能的值就是 NULL。</p>
+<p>在下列情况下一个变量被认为是 NULL：</p>
+<ul>
+<li>被赋值为 NULL</li>
+<li>尚未被赋值</li>
+<li>被 unset()</li>
+</ul>
+<h4 id="">伪变量</h4>
+<p>当一个方法在类定义内部被调用时，有一个可用的伪变量 <code>$this</code>。<code>$this</code> 是一个到主叫对象的引用（通常是该方法所从属的对象，但如果是从第二个对象静态调用时也可能是另一个对象）。</p>
+<h4 id="callback">回调（Callback）</h4>
+<p>自 PHP 5.4 起可用 callable 类型指定回调类型 callback。本文档基于同样理由使用 callback 类型信息。</p>
+<p>一些函数如 <code>call_user_func()</code> 或 <code>usort()</code> 可以接受用户自定义的回调函数作为参数。回调函数不止可以是简单函数，还可以是对象的方法，包括静态类方法。</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../php-basic/README.html" class="navigation navigation-prev " aria-label="Previous page: PHP基础知识"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../php-basic/variable.html" class="navigation navigation-next " aria-label="Next page: 变量"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

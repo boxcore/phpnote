@@ -1,0 +1,413 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>变量 | 我的PHP笔记</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../php-basic/constants.html" />
+    
+    
+    <link rel="prev" href="../php-basic/types.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="1.2" data-basepath=".." data-revision="1443663045995">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="php-basic/README.html">
+            
+                
+                    <a href="../php-basic/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         PHP基础知识
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="php-basic/types.html">
+            
+                
+                    <a href="../php-basic/types.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         类型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="1.2" data-path="php-basic/variable.html">
+            
+                
+                    <a href="../php-basic/variable.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         变量
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="php-basic/constants.html">
+            
+                
+                    <a href="../php-basic/constants.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         常量
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="php-basic/operators.html">
+            
+                
+                    <a href="../php-basic/operators.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         运算符
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="php-basic/control-structures.html">
+            
+                
+                    <a href="../php-basic/control-structures.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                         流程控制
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6" data-path="php-basic/functions.html">
+            
+                
+                    <a href="../php-basic/functions.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                         函数
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="php_sort/README.html">
+            
+                
+                    <a href="../php_sort/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         PHP排序
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="php_event_loop/README.html">
+            
+                
+                    <a href="../php_event_loop/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         PHP轮询（Event Loop）
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >我的PHP笔记</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_350">
+                    
+                        <h1 id="php">PHP变量</h1>
+<p>变量以一个美元符号（$）开头后跟变量名。变量名由字母或者下划线开头，后面跟上任意数量的字母，数字，或者下划线。</p>
+<blockquote>
+<p>表达式：<code>[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*</code></p>
+</blockquote>
+<p>注意：<code>$this</code> 是一个特殊的变量，它不能被赋值。</p>
+<blockquote>
+<p>传值赋值: $a = $b;
+引用赋值: $a = &amp;$b;</p>
+</blockquote>
+<h2 id="">预定义变量</h2>
+<p>对于全部脚本而言，PHP 提供了大量的预定义变量。这些变量将所有的外部变量表示成内建环境变量，并且将错误信息表示成返回头。我们常用的预定义变量有：</p>
+<ul>
+<li>超全局变量 — 超全局变量是在全部作用域中始终可用的内置变量</li>
+<li>$GLOBALS — 引用全局作用域中可用的全部变量</li>
+<li>$_SERVER — 服务器和执行环境信息</li>
+<li>$_GET — HTTP GET 变量</li>
+<li>$_POST — HTTP POST 变量</li>
+<li>$_FILES — HTTP 文件上传变量</li>
+<li>$_REQUEST — HTTP Request 变量</li>
+<li>$_SESSION — Session 变量</li>
+<li>$_ENV — 环境变量</li>
+<li>$_COOKIE — HTTP Cookies</li>
+<li>$php_errormsg — 前一个错误信息</li>
+<li>$HTTP_RAW_POST_DATA — 原生POST数据</li>
+<li>$http_response_header — HTTP 响应头</li>
+<li>$argc — 传递给脚本的参数数目</li>
+<li>$argv — 传递给脚本的参数数组</li>
+</ul>
+<h2 id="">变量范围</h2>
+<ol>
+<li><p>局部变量:局部变量是声明在某一函数体内的变量, 该变量的作用范围仅限于其所在函数体的内部. 如果在该函数体外部引用这个变量, 系统将会认为引用的是另外一个变量.</p>
+</li>
+<li><p>全局变量: 全局变量可以在程序的任务地方被修改. 声明全局变量可以在变量前加上关键字 global.</p>
+</li>
+</ol>
+<p>静态变量</p>
+<p>变量可以有存活的周期(生命周期). 变量的生命周期指的是变量可被使用的一个时间段, 在这个时间段内变量是有效的; 而一旦超出这个时间段变量将会失效.</p>
+<p>PHP变量的生命周期规定如:</p>
+<ol>
+<li>局部变量的生命周期为其所在函数被调用的整个过程. 当局部变量所在的函数结束时, 局部变量的生命周期也随之结束;</li>
+<li>全局变量的生命周期为其所在php脚本文件被调用的整个过程. 当全局变量所在的脚本结束调用时, 全局变量的生命周期结束.</li>
+<li>某个自定义函数结束后, 我们希望该函数内的变量依然存在, 就需要将这个变量声明为静态变量. 语法为在函数体内的变量前添加static关键字.</li>
+</ol>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+<span class="hljs-variable">$a</span> = <span class="hljs-string">'hello'</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test_static</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">static</span> <span class="hljs-variable">$a</span> = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">echo</span> <span class="hljs-variable">$a</span>.<span class="hljs-string">"\n"</span>;
+    ++<span class="hljs-variable">$a</span>;
+}
+
+test_static();  <span class="hljs-comment">// 0</span>
+test_static();  <span class="hljs-comment">// 1</span>
+test_static();  <span class="hljs-comment">// 2</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$a</span>.<span class="hljs-string">"\n"</span>;   <span class="hljs-comment">// hello</span>
+test_static();  <span class="hljs-comment">// 3</span>
+<span class="hljs-preprocessor">?&gt;</span>
+</code></pre>
+<h2 id="">可变变量</h2>
+<p>如:</p>
+<pre><code class="lang-php"><span class="hljs-variable">$a</span> = <span class="hljs-string">'hello'</span>;
+<span class="hljs-variable">$hello</span> = <span class="hljs-string">'aa'</span>;
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$$a</span>;
+</code></pre>
+<h2 id="php-">PHP 之外的变量</h2>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../php-basic/types.html" class="navigation navigation-prev " aria-label="Previous page: 类型"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../php-basic/constants.html" class="navigation navigation-next " aria-label="Next page: 常量"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

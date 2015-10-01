@@ -1,0 +1,416 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>PHP轮询（Event Loop） | 我的PHP笔记</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    
+    <link rel="prev" href="../php_sort/README.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="3" data-basepath=".." data-revision="1443663045995">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="php-basic/README.html">
+            
+                
+                    <a href="../php-basic/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         PHP基础知识
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="php-basic/types.html">
+            
+                
+                    <a href="../php-basic/types.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         类型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="php-basic/variable.html">
+            
+                
+                    <a href="../php-basic/variable.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         变量
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="php-basic/constants.html">
+            
+                
+                    <a href="../php-basic/constants.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         常量
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="php-basic/operators.html">
+            
+                
+                    <a href="../php-basic/operators.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         运算符
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="php-basic/control-structures.html">
+            
+                
+                    <a href="../php-basic/control-structures.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                         流程控制
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6" data-path="php-basic/functions.html">
+            
+                
+                    <a href="../php-basic/functions.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                         函数
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="php_sort/README.html">
+            
+                
+                    <a href="../php_sort/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         PHP排序
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="3" data-path="php_event_loop/README.html">
+            
+                
+                    <a href="../php_event_loop/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         PHP轮询（Event Loop）
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >我的PHP笔记</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_351">
+                    
+                        <h1 id="phpevent-loop">PHP轮询（Event Loop）</h1>
+<p>PHP代码是由上往下执行, 很多时候php都是在等获取完数据。比如 执行过程中我们可能要等获取完远程的数据，又或者执行完一个复杂的sql查询，反正都是在等。<strong>难道就不能在程序等待的时候干点别的事情吗？</strong></p>
+<p>如果你有写过JS，你可能会想到回调和DOM事件。另外还可能想到php中也有回调，但处理回调的方式可能不大一样。下面，我们将来讨论下event loop如何工作的，还有怎么在PHP中使用event loop。</p>
+<h2 id="event-loop">一、什么是轮询（Event Loop）</h2>
+<p>首先，扫下盲，轮询也称为事件循环，具体解释可以猛击<a href="http://www.ruanyifeng.com/blog/2014/10/event-loop.html" target="_blank">这里</a></p>
+<p>为了更好去理解轮询，我们来看下在浏览器中怎么使用js代码实现的：</p>
+<pre><code class="lang-javascript">&lt;script type=<span class="hljs-string">"text/javascript"</span>&gt;
+    setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"inside the timeout"</span>);
+    }, <span class="hljs-number">1</span>);
+
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"outside the timeout"</span>);
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span></span>
+</code></pre>
+<p>chrome浏览器控制器中，我们可以看到先打印<code>outside the timeout</code>，然后打印<code>inside the timeout</code>。</p>
+<p>然后, 我们勉强使用php来模拟js中的setTimeout，其代码如下：</p>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setTimeout</span><span class="hljs-params">(callable <span class="hljs-variable">$callback</span>, <span class="hljs-variable">$delay</span>)</span> </span>{
+    <span class="hljs-variable">$now</span> = microtime(<span class="hljs-keyword">true</span>);
+
+    <span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
+        <span class="hljs-keyword">if</span> (microtime(<span class="hljs-keyword">true</span>) - <span class="hljs-variable">$now</span> &gt; <span class="hljs-variable">$delay</span>) {
+            <span class="hljs-variable">$callback</span>();
+            <span class="hljs-keyword">return</span>;
+        }
+    }
+}
+
+setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">print</span> <span class="hljs-string">"inside the timeout"</span>;
+}, <span class="hljs-number">1</span>);
+
+<span class="hljs-keyword">print</span> <span class="hljs-string">"outside the timeout"</span>;
+<span class="hljs-preprocessor">?&gt;</span>
+</code></pre>
+<p>显然，php中的输出顺序是：</p>
+<ul>
+<li><code>inside the timeout</code></li>
+<li><code>outside the timeout</code></li>
+</ul>
+<h2 id="php">二、PHP中的轮询</h2>
+<p>在PHP中，我们可以使用类库Icicle来实现，代码如：</p>
+<pre><code class="lang-php"><span class="hljs-keyword">use</span> <span class="hljs-title">Icicle</span>\<span class="hljs-title">Loop</span>;
+
+Loop\timer(<span class="hljs-number">0.1</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">print</span> <span class="hljs-string">"inside timer"</span>;
+});
+
+<span class="hljs-keyword">print</span> <span class="hljs-string">"outside timer"</span>;
+
+Loop\run();
+</code></pre>
+<p>或者使用类库React来实现：</p>
+<pre><code class="lang-php"><span class="hljs-variable">$loop</span> = React\EventLoop\Factory::create();
+
+<span class="hljs-variable">$loop</span><span class="hljs-variable">-&gt;addTimer</span>(<span class="hljs-number">0.1</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">print</span> <span class="hljs-string">"inside timer"</span>;
+});
+
+<span class="hljs-keyword">print</span> <span class="hljs-string">"outside timer"</span>;
+
+<span class="hljs-variable">$loop</span><span class="hljs-variable">-&gt;run</span>();
+</code></pre>
+<blockquote>
+<p>友情提醒：以上需要php版本v5.5及以上，还要安装composer</p>
+</blockquote>
+<h2 id="">参考资料</h2>
+<ul>
+<li><a href="http://chen498402552-163-com.iteye.com/blog/1997633" target="_blank">javascript事件轮询(event loop)详解</a></li>
+<li><a href="http://ourjs.com/detail/54c480c4232227083e000016" target="_blank">理解Node.js的事件循环（Event Loop）和线程池</a></li>
+<li><a href="https://github.com/reactphp/event-loop" target="_blank">PHP轮询类库：reactphp</a></li>
+<li><a href="https://github.com/icicleio" target="_blank">PHP轮询类库：icicle.io</a></li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../php_sort/README.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: PHP排序"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
